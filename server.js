@@ -2,7 +2,7 @@ const express=require('express');
 const hbs=require('hbs');
 var app=express();
 
-const port =process.env.PORT;//heroku
+const port =process.env.PORT||3000;//heroku
 app.set('view engine','hbs');
 
 app.get('/',(req,res)=>{
@@ -12,6 +12,6 @@ app.get('/',(req,res)=>{
   });
 });
 
-app.listen(3000,()=>{
-  console.log("Port is up on 3000");
-})
+app.listen(port,()=>{
+  console.log(`Port is up on ${port}`);
+});
