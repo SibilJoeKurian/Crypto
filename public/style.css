@@ -1,0 +1,33 @@
+.row {
+  text-align:center;
+}
+
+.col-md-4 {
+  border-radius:20px;
+  margin:10px;
+  border:1px solid #000;
+  display:inline-block;
+  float:none !important;
+}
+
+.col-md-2 {
+  border-radius:100%;
+  height:60px;
+  width:60px;
+  background:#ccc;
+  width:25%;
+  margin:20px;
+}
+
+.row h1, .row p {
+  font-style:italic;
+  text-align:left;
+}
+
+.row h1 {
+  font-size:1.4em;
+}
+
+.row p {
+  font-size:1em;
+}
